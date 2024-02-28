@@ -1,0 +1,1101 @@
+<!-- {% extends 'enroll/base.html'%} -->
+{% block content %} 
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>AECD Forum</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Investment, Trade, Finance, promotion & Development">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="AECD Forum">
+  <meta name="generator" content="AECD Forum Template">
+  
+  <!-- PLUGINS CSS STYLE -->
+  <!-- Bootstrap -->
+  <link href="plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="plugins/font-awsome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Magnific Popup -->
+  <link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <!-- Slick Carousel -->
+  <link href="plugins/slick/slick.css" rel="stylesheet">
+  <link href="plugins/slick/slick-theme.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link href="images/favicon.png" rel="shortcut icon">
+
+</head>
+
+<body class="body-wrapper">
+
+
+<!--========================================
+=            Navigation Section            =
+=========================================-->
+
+<nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
+	<div class="container-fluid p-0">
+	  <a class="navbar-brand" href="https://aecdf.com/index.php">
+		<img src="https://aecdf.com/assets/images/logo.png" alt="logo" class="logo">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+		aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="fa fa-bars"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	  <ul class="navbar-nav mx-auto">
+		  <li class="nav-item">
+			  <a class="nav-link" href="index.html">Home<span>/</span></a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link" href="#!" data-toggle="dropdown">Network<i class="fa fa-angle-down"></i><span>/</span></a>
+			<ul class="dropdown-menu">
+			  <li><a class="dropdown-item" href="https://aecdf.com/#network/patron.php">Patron</a></li>
+			  <li><a class="dropdown-item" href="https://aecdf.com/network/founder.php">Founder</a></li>
+			  <li><a class="dropdown-item" href="https://aecdf.com/#network/ambassadors.php">Ambassadors</a></li>
+			  <li><a class="dropdown-item" href="https://aecdf.com/#network/honorary-member.php">Honorary Member</a></li>
+			  <li><a class="dropdown-item" href="https://aecdf.com/#network/advisory-member.php">Advisory Member</a></li>
+			  <li><a class="dropdown-item" href="https://aecdf.com/network/partner.php">Partners</a></li>
+			  <li><a class="dropdown-item" href="https://aecdf.com/network/investors.php">Investors</a></li>
+			  <li><a class="dropdown-item" href="https://aecdf.com/network/sponsors.php">Sponsors</a></li>
+			  <li><a class="dropdown-item" href="https://aecdf.com/network/member.php">Members</a></li>           
+			  <li><a class="dropdown-item" href="https://aecdf.com/network/team.php">Team</a></li>           
+			</ul>
+		  </li>
+		  <li class="nav-item dropdown">
+		  <a class="nav-link" href="#!" data-toggle="dropdown">About<i class="fa fa-angle-down"></i><span>/</span></a>
+		  <ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="https://aecdf.com/public/about.php">About Us</a></li>		
+			<li><a class="dropdown-item" href="https://aecdf.com/public/about-vision.php">Vision</a></li>		
+			<li><a class="dropdown-item" href="https://aecdf.com/public/about-aim.php">AIM</a></li>
+		  </ul>
+		</li>
+  
+	  <li class="nav-item dropdown">
+		  <a class="nav-link" href="#!" data-toggle="dropdown">Events<i class="fa fa-angle-down"></i><span>/</span></a>
+		  <ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="https://aecdf.com/events/2023-july-27.php">27 July Events</a></li>	
+			<!--<li><a class="dropdown-item" href="</?php echo $URL_ROOT."events/upcoming.php";?>">Upcoming Events</a></li>			
+			<li><a class="dropdown-item" href="</?php echo $URL_ROOT."#events/past-event.php";?>">Past Events</a></li>-->
+		  </ul>
+		</li>
+	  
+	  <li class="nav-item dropdown">
+		  <a class="nav-link" href="#!" data-toggle="dropdown">Gallery<i class="fa fa-angle-down"></i><span>/</span></a>
+		  <ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="gallery.html">Photos</a></li>			
+			<li><a class="dropdown-item" href="gallery.html">Videos</a></li>
+		  </ul>
+	  </li>
+	  <li class="nav-item dropdown">
+			<a class="nav-link" href="#!" data-toggle="dropdown">News<i class="fa fa-angle-down"></i><span>/</span>
+			</a>
+			<ul class="dropdown-menu">
+			  <li><a class="dropdown-item" href="https://aecdf.com/#events/newspaper.php">Newspaper</a></li>			
+			  <li><a class="dropdown-item" href="tnews.html">Television</a></li>			
+			  <li><a class="dropdown-item" href="blog.html">Blog</a></li>			
+			  <li><a class="dropdown-item" href="nations.html">Nations</a></li>			
+			  <li><a class="dropdown-item" href="https://aecdf.com/#events/newsothers.php">Others</a></li>
+			</ul>
+	  </li>
+	  <li class="nav-item">
+		  <a class="nav-link" href="https://aecdf.com/public/poll.php">Poll<span>/</span></a>
+	  </li>
+	  <li class="nav-item">
+		  <a class="nav-link" href="https://aecdf.com/public/services.php">Services<span>/</span></a>
+	  </li>
+	  <li class="nav-item">
+		  <a class="nav-link" href="https://aecdf.com/public/membership.php">Membership</a>
+	  </li>
+	  </ul>
+		<a href="https://aecdf.com/public/contact-us.php" class="ticket">
+		  <img src="https://aecdf.com/assets/images/icon/ticket.png" alt="ticket">
+		  <span>Contact-us</span>
+		</a>
+	  </div>
+	</div>
+  </nav>	<!--====  End of Navigation Section  ====-->
+
+<!--====  End of Navigation Section  ====-->
+
+
+<!--============================
+=            Banner            =
+=============================-->
+
+<section class="banner bg-banner-one overlay">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- Content Block -->
+				<div class="block">
+					<!-- Coundown Timer -->
+					<div class="timer"></div>
+					<h1>Business</h1>
+					<h2>Development</h2>
+					<h6>Investment, Finance, Trade, Promotion & Development</h6>
+					<!-- Action Button -->
+					<a href="contact.html" class="btn btn-white-md">get start now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	
+<!--====  End of Banner  ====-->
+
+<!--===========================
+=            About            =
+============================-->
+
+<section class="section about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 align-self-center">
+				<div class="image-block bg-about">
+					<img class="img-fluid" src="images/speakers/featured-speaker.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-6 align-self-center">
+				<div class="content-block">
+					<h2>About The <span class="alternate"><strong>AECD Forum</strong></span></h2>
+					<div class="description-one">
+						<p>
+							<strong>AECD Forum</strong> has global members including the <strong>European, American, Australian, African</strong> and <strong>Asian</strong> business communities that are in synergy with your sector and looking for potential investments & growth.
+						</p>
+					</div>
+					<div class="description-two">
+						<p>Our aim is to educate the entrepreneur on the legal and regulatory requirements, offering support to the company, firms, and individuals at every stage to make sure they are compliant and continually growing.</p>
+					</div>
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<a href="contact.html" class="btn btn-main-md">Join Now</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="about-us.html" class="btn btn-transparent-md">Read more</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of About  ====-->
+
+
+<section class="section speakers bg-speaker overlay-lighter">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!-- Section Title -->
+				<div class="section-title white">
+					<h3>Our <span class="alternate">Network</span></h3>
+					<p>Abrahamic Economic & Cultural Development Forum</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 1 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/featured-speaker.jpg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Anas Bin Ajahar</a></h5>
+						<p>Founder & Chairman</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 2 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/dilip.jpeg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="admember.html">Dilip Kumar</a></h5>
+						<p>Special Advisor</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 3 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/arun.png" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="admember.html">Vishal Arun Mishra</a></h5>
+						<p>Legal Advisor</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 4 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/Nitin.jpg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="member.html">Nitin Bir</a></h5>
+						<p>Founder of Autonation Custom</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 5 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/sandeep.jpg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="member.html">Sandeep Singh</a></h5>
+						<p>CEO at Saving House Interprises</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 1 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/kamalsabri.jpg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="member.html">Ustad Kamal Sabri</a></h5>
+						<p>Indian Music Maestro</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 7 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/bilalalturk.jpg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="team.html">Bilal Al Turk</a></h5>
+						<p>Business Counsultant</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 8 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/dharmendar.jpeg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Dharmendar Kumar Kannaujiya</a></h5>
+						<p>Content Writer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Speakers  ====-->
+
+<!--=============================
+=            Feature            =
+==============================-->
+
+<section class="ticket-feature">
+	<div class="container-fluid m-0 p-0">
+		<div class="row p-0 m-0">
+			<div class="col-lg-7 p-0 m-0">
+				<div class="block bg-timer overlay-dark text-center">
+					<div class="section-title white m-0">
+						<h3>Grow Your <span class="alternate">Network</span></h3>
+						<p>Join Abrahamic Economic & Cultural Development Forum</p>
+					</div>
+					<!-- Coundown Timer -->
+					<div class="timer"></div>
+					<a href="contact.html" class="btn btn-main-md">Join AECD Forum</a>
+				</div>
+			</div>
+			<div class="col-lg-5 p-0">
+				<div class="block-2">
+					<div class="row no-gutters">
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-microphone"></i>
+								<h5>Investment</h5>
+							</div>
+						</div>
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-flag"></i>
+								<h5>Finance</h5>
+							</div>
+						</div>
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-ticket"></i>
+								<h5>Trade</h5>
+							</div>
+						</div>
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-calendar"></i>
+								<h5>Promotion & Development</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Feature  ====-->
+
+
+<!--==========================
+=            News            =
+===========================-->
+
+<section class="news-hr section mb-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>AECD Forum <span class="alternate">News</span></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, enim.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row no-gutters">
+			<div class="col-lg-6 col-md-6">
+				<article class="news-post-hr">
+					<div class="post-thumb">
+						<a href="news-single.html">
+							<img src="images/news/post-thumb-hr-one.jpg" alt="post-image" class="img-fluid">
+						</a>
+					</div>
+					<div class="post-contents border-top">
+						<div class="post-title">
+							<h6><a href="news-single.html">Default title here</a></h6>
+						</div>
+						<div class="post-exerpts">
+							<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed doeiuse tempor incididunt ut
+							</p>
+						</div>
+
+						<div class="date">
+							<h4>20<span>May</span></h4>
+						</div>
+						<div class="more">
+							<a href="news-single.html">Show more</a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<article class="news-post-hr">
+					<div class="post-thumb">
+						<a href="news-single.html">
+							<img src="images/news/post-thumb-hr-two.jpg" alt="post-image" class="img-fluid">
+						</a>
+					</div>
+					<div class="post-contents border-top">
+						<div class="post-title">
+							<h6><a href="news-single.html">Default title here</a></h6>
+						</div>
+						<div class="post-exerpts">
+							<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed doeiuse tempor incididunt ut
+							</p>
+						</div>
+
+						<div class="date">
+							<h4>20<span>May</span></h4>
+						</div>
+						<div class="more">
+							<a href="news-single.html">Show more</a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<article class="news-post-hr">
+					<div class="post-thumb">
+						<a href="news-single.html">
+							<img src="images/news/post-thumb-hr-three.jpg" alt="post-image" class="img-fluid">
+						</a>
+					</div>
+					<div class="post-contents">
+						<div class="post-title">
+							<h6><a href="news-single.html">Default title here</a></h6>
+						</div>
+						<div class="post-exerpts">
+							<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed doeiuse tempor incididunt ut
+							</p>
+						</div>
+
+						<div class="date">
+							<h4>20<span>May</span></h4>
+						</div>
+						<div class="more">
+							<a href="news-single.html">Show more</a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<article class="news-post-hr">
+					<div class="post-thumb">
+						<a href="news-single.html">
+							<img src="images/news/post-thumb-hr-four.jpg" alt="post-image" class="img-fluid">
+						</a>
+					</div>
+					<div class="post-contents">
+						<div class="post-title">
+							<h6><a href="news-single.html">Default title here</a></h6>
+						</div>
+						<div class="post-exerpts">
+							<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed doeiuse tempor incididunt ut
+							</p>
+						</div>
+
+						<div class="date">
+							<h4>20<span>May</span></h4>
+						</div>
+						<div class="more">
+							<a href="news-single.html">Show more</a>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of News  ====-->
+
+<!--=============================
+=            Gallery            =
+==============================-->
+
+<section class="gallery-full section pb-0">
+	<div class="container-fluid p-0">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>AECD Forum <span class="alternate">Gallery</span></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, autem.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row no-gutters">
+			<!-- Gallery Image -->
+			<div class="col-lg-3 col-md-4">
+				<div class="image">
+					<img src="images/gallery/gallery-full-one.jpg" alt="gallery-image" class="img-fluid">
+					<div class="primary-overlay">
+						<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-full-popup-one.jpg"><i
+								class="fa fa-picture-o"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- Gallery Image -->
+			<div class="col-lg-3 col-md-4">
+				<div class="image">
+					<img src="images/gallery/gallery-full-two.jpg" alt="gallery-image" class="img-fluid">
+					<div class="primary-overlay">
+						<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-full-popup-two.jpg"><i
+								class="fa fa-picture-o"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- Gallery Image -->
+			<div class="col-lg-3 col-md-4">
+				<div class="image">
+					<img src="images/gallery/gallery-full-three.jpg" alt="gallery-image" class="img-fluid">
+					<div class="primary-overlay">
+						<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-full-popup-three.jpg"><i
+								class="fa fa-picture-o"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- Gallery Image -->
+			<div class="col-lg-3 col-md-4">
+				<div class="image">
+					<img src="images/gallery/gallery-full-four.jpg" alt="gallery-image" class="img-fluid">
+					<div class="primary-overlay">
+						<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-full-popup-four.jpg"><i
+								class="fa fa-picture-o"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- Gallery Image -->
+			<div class="col-lg-3 col-md-4">
+				<div class="image">
+					<img src="images/gallery/gallery-full-five.jpg" alt="gallery-image" class="img-fluid">
+					<div class="primary-overlay">
+						<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-full-popup-five.jpg"><i
+								class="fa fa-picture-o"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- Gallery Image -->
+			<div class="col-lg-3 col-md-4">
+				<div class="image">
+					<img src="images/gallery/gallery-full-six.jpg" alt="gallery-image" class="img-fluid">
+					<div class="primary-overlay">
+						<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-full-popup-six.jpg"><i
+								class="fa fa-picture-o"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- Gallery Image -->
+			<div class="col-lg-3 col-md-4">
+				<div class="image">
+					<img src="images/gallery/gallery-full-seven.jpg" alt="gallery-image" class="img-fluid">
+					<div class="primary-overlay">
+						<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-full-popup-sven.jpg"><i
+								class="fa fa-picture-o"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- Gallery Image -->
+			<div class="col-lg-3 col-md-4">
+				<div class="image">
+					<img src="images/gallery/gallery-full-eight.jpg" alt="gallery-image" class="img-fluid">
+					<div class="primary-overlay">
+						<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-full-popup-eight.jpg"><i
+								class="fa fa-picture-o"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Gallery  ====-->
+
+<!--==============================
+=            Sponsors            =
+===============================-->
+
+<section class="sponsors section bg-sponsors overlay-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>Our <span class="alternate"><strong>Partner</strong></span></h3>
+					<p>Abrahamic Economic & Cultural Development Forum</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<!-- Title -->
+				<div class="block text-center">
+					<!-- Sponsors image list -->
+					<ul class="list-inline sponsors-list">
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/hrkotlogo.jpg" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/lowkotlogo.jpg" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/p10logo.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/rsadvlogo.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- Title -->
+				<div class="block text-center">
+					<!-- Sponsors image list -->
+					<ul class="list-inline sponsors-list">
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/sangrologo.jpg" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/gl-spon-two.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/gl-spon-three.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Sponsors  ====-->
+
+<!--==============================
+
+=            Registration            =
+===================================-->
+
+<section class="registration">
+	<div class="container-fuild p-0">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 p-0">
+				<div class="service-block bg-service overlay-primary text-center">
+					<div class="row no-gutters">
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-microphone"></i>
+								<h5>Investment</h5>
+							</div>
+						</div>
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-flag"></i>
+								<h5>Finance</h5>
+							</div>
+						</div>
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-ticket"></i>
+								<h5>Trade</h5>
+							</div>
+						</div>
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-calendar"></i>
+								<h5>Promotion & Development</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-12 p-0">
+				<div class="registration-block bg-registration overlay-dark">
+					<div class="block">
+						<div class="title text-left">
+							<h3>Join <span class="alternate">AECD Forum</span></h3>
+							<p>Abrahamic Economic & Cultural Development Forum</p>
+						</div>
+						<form action="#" class="row">
+							<div class="col-md-6">
+								<input type="text" class="form-control main" placeholder="Your Name" required>
+							</div>
+							<div class="col-md-6">
+								<input type="email" class="form-control main" placeholder="Email" required>
+							</div>
+							<div class="col-md-6">
+								<input type="text" class="form-control main" placeholder="Phone" required>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<select class="form-control main" id="select-ticket" required>
+								      <option>Ticket Type</option>
+								      <option>1</option>
+								      <option>2</option>
+								      <option>3</option>
+								      <option>4</option>
+								      <option>5</option>
+								    </select>
+								</div>
+							</div>
+							<div class="col-12">
+								<button type="submit" class="btn btn-white-md">Register Now</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Registration  ====-->
+
+
+
+<!--===========================================
+=            Call to Action Ticket            =
+============================================-->
+
+<section class="cta-ticket bg-ticket overlay-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<!-- Get ticket info -->
+				<div class="content-block">
+					<h2>Join <span class="alternate">Now!</span></h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmtempor incidi</p>
+					<a href="" class="btn btn-main-md">Join Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="image-block"><img src="images/speakers/speaker-ticket.png" alt="" class="img-fluid"></div>
+</section>
+
+<!--====  End of Call to Action Ticket  ====-->
+
+<!--================================
+=            News Posts            =
+=================================-->
+
+<section class="news section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>AECD Forum <span class="alternate">News</span></h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore dolore</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
+				<div class="blog-post">
+					<div class="post-thumb">
+						<a href="news-single.html">
+							<img src="images/news/post-thumb-one.jpg" alt="post-image" class="img-fluid">
+						</a>
+					</div>
+					<div class="post-content">
+						<div class="date">
+							<h4>20<span>May</span></h4>
+						</div>
+						<div class="post-title">
+							<h2><a href="news-single.html">Elementum purus id ultrices.</a></h2>
+						</div>
+						<div class="post-meta">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<i class="fa fa-user-o"></i>
+									<a href="#">Admin</a>
+								</li>
+								<li class="list-inline-item">
+									<i class="fa fa-heart-o"></i>
+									<a href="#">350</a>
+								</li>
+								<li class="list-inline-item">
+									<i class="fa fa-comments-o"></i>
+									<a href="#">30</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
+				<div class="blog-post">
+					<div class="post-thumb">
+						<a href="news-single.html">
+							<img src="images/news/post-thumb-two.jpg" alt="post-image" class="img-fluid">
+						</a>
+					</div>
+					<div class="post-content">
+						<div class="date">
+							<h4>20<span>May</span></h4>
+						</div>
+						<div class="post-title">
+							<h2><a href="news-single.html">Elementum purus id ultrices.</a></h2>
+						</div>
+						<div class="post-meta">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<i class="fa fa-user-o"></i>
+									<a href="#">Admin</a>
+								</li>
+								<li class="list-inline-item">
+									<i class="fa fa-heart-o"></i>
+									<a href="#">350</a>
+								</li>
+								<li class="list-inline-item">
+									<i class="fa fa-comments-o"></i>
+									<a href="#">30</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 m-md-auto col-sm-8 col-10 m-auto">
+				<div class="blog-post">
+					<div class="post-thumb">
+						<a href="news-single.html">
+							<img src="images/news/post-thumb-three.jpg" alt="post-image" class="img-fluid">
+						</a>
+					</div>
+					<div class="post-content">
+						<div class="date">
+							<h4>20<span>May</span></h4>
+						</div>
+						<div class="post-title">
+							<h2><a href="news-single.html">Elementum purus id ultrices.</a></h2>
+						</div>
+						<div class="post-meta">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<i class="fa fa-user-o"></i>
+									<a href="#">Admin</a>
+								</li>
+								<li class="list-inline-item">
+									<i class="fa fa-heart-o"></i>
+									<a href="#">350</a>
+								</li>
+								<li class="list-inline-item">
+									<i class="fa fa-comments-o"></i>
+									<a href="#">30</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of News Posts  ====-->
+
+<!--==============================================
+=            Call to Action Subscribe            =
+===============================================-->
+
+<section class="cta-subscribe bg-subscribe overlay-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 mr-auto">
+				<!-- Subscribe Content -->
+				<div class="content">
+					<h3>Subscribe <span class="alternate"><strong>AECD Forum</strong></span></h3>
+					<p>Investment, Finance, Trade, Promotion & Development</p>
+				</div>
+			</div>
+			<div class="col-md-6 ml-auto align-self-center">
+				<!-- Subscription form -->
+				<form action="#" class="row">
+					<div class="col-lg-8 col-md-12">
+						<input type="email" class="form-control main white mb-lg-0" placeholder="Email">
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="subscribe-button">
+							<button class="btn btn-main-md">Subscribe</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Call to Action Subscribe  ====-->
+
+<section class="map">
+	<!-- Google Map -->
+	<div id="map" data-latitude="40.712776" data-longitude="-74.005974" data-marker="images/icon/marker.png" data-marker-name="AECD Forum"></div>
+	<div class="address-block">
+		<h4><strong> AECD Forum</strong></h4>
+		<ul class="address-list p-0 m-0">
+			<li><i class="fa fa-home"></i><span>CP, New Delhi, India.</span></li>
+			<li><i class="fa fa-phone"></i><span>+91-9015707816</span></li>
+		</ul>
+		<a href="#" class="btn btn-white-md">Get Direction</a>
+	</div>
+</section>
+<!--====  End of Google Map  ====-->
+
+<!--============================
+=            Footer            =
+=============================-->
+
+<footer class="footer-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="logo" class="img-fluid">
+          </div>
+          <ul class="social-links-footer list-inline">
+            <li class="list-inline-item">
+              <a href="https://facebook.com/aecdforum"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/aecd_forum"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://instagram.com/aecdforum"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://youtube.com/aecdforum"><i class="fa fa-rss"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://wa.me/message/RBDBVMQEZXKQL1"><i class="fa fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Subfooter -->
+<footer class="subfooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 align-self-center">
+        <div class="copyright-text">
+          <p><a href="index.html">AECD Forum</a> &copy; 2022, Designed &amp; Developed by <a href="https://lowkot.com/">Lowkot</a></p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <a href="#" class="to-top"><i class="fa fa-angle-up"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- JAVASCRIPTS -->
+  <!-- jQuey -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- Shuffle -->
+  <script src="plugins/shuffle/shuffle.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Slick Carousel -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- SyoTimer -->
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <!-- Google Mapl -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+  <!-- Custom Script -->
+  <script src="js/script.js"></script>
+
+{% endblock content %}
+</body>
+
+</html>
+
+
+<!-- {% endblock content %} -->
